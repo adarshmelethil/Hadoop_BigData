@@ -1,0 +1,4 @@
+ab bc cd de
+ab bc ed kg
+kg ab bc cd
+cd de oo fl
