@@ -11,8 +11,11 @@ FLAGS = None
 def main(_):
 	precent_keep = float(FLAGS.reduce_precent)/100.0
 	for line in sys.stdin:
-		if random.random() < precent_keep:
-			print('{key}'.format(key=line))
+		line = line.strip()
+		line = line.lower()
+		if len(line) > 0:
+			if random.random() < precent_keep:
+				print('{key}'.format(key=line))
 
 
 if __name__=='__main__':
