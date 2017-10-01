@@ -18,11 +18,11 @@ done
 
 echo "Maper: $MAPPER"
 echo "Input file: $INPUTFILE"
-echo "Output file: $OPTARG"
+echo "Output file: $OUTPUTFILE"
 
 hadoop jar $JARFILE \
--files $MAPPER,$REDUCER \
--mapper $MAPPER \
--input $INPUTFILE \
--output $OUTPUTFILE \
--D mapred.reduce.tasks=0
+ -D mapred.reduce.tasks=0 \
+ -files $MAPPER,$REDUCER \
+ -mapper $MAPPER \
+ -input $INPUTFILE \
+ -output $OUTPUTFILE
