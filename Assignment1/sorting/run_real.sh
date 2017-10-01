@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "Running map-reduce..."
 
-JARFILE=/home/instructor/hadoop-streaming-2.7.3.jar
+JARFILE=/home/instructor/hadoop-streaming/hadoop-streaming-2.7.3.jar
 
 
 MAPPER=mapper.py
