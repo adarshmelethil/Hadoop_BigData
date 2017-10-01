@@ -19,10 +19,10 @@ def main(_):
 			tot_count=tot_count+int(count)
 			continue
 		if prev_key!=key:
-			print ('{}\t{}'.format(prev_key,tot_count))
+			print ('{key}\t{value}'.format(key=prev_key,value=tot_count))
 			prev_key=key
 			tot_count=int(count)
-	print ('{}\t{}'.format(prev_key,tot_count))
+	print ('{key}\t{value}'.format(key=prev_key,value=tot_count))
 
 
 if __name__=='__main__':
