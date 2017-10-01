@@ -12,7 +12,7 @@ def main(_):
 	precent_keep = float(FLAGS.reduce_precent)/100.0
 	for line in sys.stdin:
 		if random.random() < precent_keep:
-			print(''.format(line))
+			print('{}'.format(line))
 
 
 if __name__=='__main__':
