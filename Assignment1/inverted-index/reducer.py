@@ -17,7 +17,8 @@ def main(_):
 			newValue = [oldValue]
 			continue
 		if prev_key == key:
-			newValue.append(oldValue)
+			if not oldValue in newValue:
+				newValue.append(oldValue.split(','))
 			continue
 		if prev_key != key:
 			value = ','.join(newValue)
