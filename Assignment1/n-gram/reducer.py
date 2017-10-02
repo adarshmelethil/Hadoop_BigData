@@ -9,7 +9,7 @@ def main(_):
 	prev_key = None
 	tot_count = 0
 	for line in sys.stdin:
-		line = line.rstrip()
+		# line = line.strip()
 		key,count = line.split('\t')
 		if prev_key==None:
 			prev_key=key
