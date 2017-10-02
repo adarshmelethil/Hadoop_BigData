@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #mapper.py
-
+import os
 import string
 import sys
 import random
