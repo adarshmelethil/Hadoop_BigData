@@ -24,7 +24,7 @@ echo "Maper: $MAPPER"
 echo "Reducer: $REDUCER"
 echo "Combiner: $COMBINER"
 echo "Input file: $INPUTFILE"
-echo "Output file: $OPTARG"
+echo "Output file: $OUTPUTFILE"
 
 hadoop jar $JARFILE \
 -files $MAPPER,$REDUCER \
