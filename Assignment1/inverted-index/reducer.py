@@ -14,11 +14,11 @@ def main(_):
 
 		if prev_key == None:
 			prev_key = key
-			newValue = [oldValue]
+			newValue = oldValue.split(',')
 			continue
 		if prev_key == key:
 			if not oldValue in newValue:
-				newValue.append(oldValue.split(','))
+				newValue.append(oldValue)
 			continue
 		if prev_key != key:
 			value = ','.join(newValue)
