@@ -21,11 +21,11 @@ def main(_):
 			continue
 		if prev_key != key:
 			value = ','.join(newValue)
-			print ('{}\t{}'.format(prev_key,value))
+			print ('{key}\t{value}'.format(key=prev_key,value=value))
 			prev_key = key
 			tot_count = [oldValue]
 	value = ','.join(newValue)
-	print ('{}\t{}'.format(prev_key,value))
+	print ('{key}\t{value}'.format(key=prev_key,value=value))
 
 
 if __name__=='__main__':
