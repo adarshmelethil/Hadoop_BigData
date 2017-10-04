@@ -38,4 +38,4 @@ hadoop jar $JARFILE \
 -output $OUTPUTFILE
 
 hadoop fs -getmerge $OUTPUTFILE result.txt
-hadoop fs -rm -r $OUTPUTFILE
+#hadoop fs -rm -r $OUTPUTFILE
