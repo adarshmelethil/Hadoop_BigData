@@ -5,7 +5,7 @@ import string
 import sys
 
 def main(_):
-	prev_key = None
+	prev_value = None
 	tot_count = 0
 	for line in sys.stdin:
 		line = line.rstrip()
