@@ -9,17 +9,17 @@ def main(_):
 	tot_count = 0
 	for line in sys.stdin:
 		line = line.rstrip()
-		key = line
+		key,value = line.split('\t')
 
-		if prev_key == None:
-			prev_key = key
+		if prev_value == None:
+			prev_value = value
 			continue
-		if prev_key == key:
+		if prev_value == value:
 			continue
-		if prev_key != key:
-			print ('{key}'.format(key=prev_key))
-			prev_key = key
-	print ('{key}'.format(key=prev_key))
+		if prev_value != value:
+			print ('{value}'.format(value=prev_value))
+			prev_value = value
+	print ('{value}'.format(value=prev_value))
 
 
 if __name__== '__main__':
