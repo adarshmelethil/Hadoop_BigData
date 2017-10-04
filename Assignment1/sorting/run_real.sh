@@ -28,7 +28,7 @@ echo "Output file: $OUTPUTFILE"
 
 hadoop jar $JARFILE \
  -D mapred.text.key.partitioner.option=-k1,1 \
- -D mapred.reduce.tasks=37 \
+ -D mapred.reduce.tasks=38 \
  -files $MAPPER,$REDUCER \
  -mapper $MAPPER \
  -reducer $REDUCER \
