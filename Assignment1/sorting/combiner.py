@@ -17,9 +17,9 @@ def main(_):
 		if prev_value == value:
 			continue
 		if prev_value != value:
-			print ('{value}'.format(value=prev_value))
+			print ('{key}\t{value}'.format(key=key, value=prev_value))
 			prev_value = value
-	print ('{value}'.format(value=prev_value))
+	print ('{key}\t{value}'.format(key=key, value=prev_value))
 
 
 if __name__== '__main__':
