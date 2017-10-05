@@ -18,7 +18,7 @@ def main(_):
 		for word in words:
 			for c in string.punctuation:
 				word=word.replace(c,"")
-
+			if len(word) == 0: continue
 			if len(previous_n_words) == FLAGS.word_level:
 				previous_n_words = [previous_n_words[i] for i in range(1, len(previous_n_words))]
 
