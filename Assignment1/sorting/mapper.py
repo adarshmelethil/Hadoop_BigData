@@ -17,6 +17,7 @@ def main():
 			value = word.lower()
 			key = 0 if value[0] < 'a' else value[0]
 			print('{key}\t{value}'.format(key=key, value=value))
+	
 
 if __name__ == "__main__":
 	main()
