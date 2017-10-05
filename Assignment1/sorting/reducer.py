@@ -9,7 +9,7 @@ def main(_):
 	tot_count = 0
 	for line in sys.stdin:
 		line = line.rstrip()
-		value = line.split('\t')
+		value = line
 
 		if prev_value == None:
 			prev_value = value
