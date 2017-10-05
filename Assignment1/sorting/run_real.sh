@@ -6,7 +6,7 @@ JARFILE=/home/instructor/hadoop-streaming/hadoop-streaming-2.7.3.jar
 
 MAPPER=mapper.py
 REDUCER=reducer.py
-COMBINER=reducer.py
+COMBINER=combiner.py
 INPUTFILE=/user/dkrishna/wordcount/shakespeare.txt
 OUTPUTFILE=/user/adarsh.melethil/output
 
