@@ -6,6 +6,7 @@ import sys
 
 def main(_):
 	prev_value = None
+	prev_key = None
 	tot_count = 0
 	for line in sys.stdin:
 		line = line.rstrip()
@@ -13,12 +14,15 @@ def main(_):
 
 		if prev_value == None:
 			prev_value = value
+			prev_key = key
 			continue
 		if prev_value == value:
 			continue
 		if prev_value != value:
 			print ('{key}\t{value}'.format(key=key, value=prev_value))
 			prev_value = value
+			prev_key = key
+	
 	print ('{key}\t{value}'.format(key=key, value=prev_value))
 
 

@@ -28,15 +28,15 @@ echo "Output file: $OUTPUTFILE"
 
 hadoop jar $JARFILE \
  -D mapred.reduce.tasks=0 \
+ -D mapred.text.key.partitioner.option=-k1,1 \
+ -partitioner org.apache.hadoop.mapred.lib.KeyFieldBasedPartitioner \
  -files $MAPPER,$COMBINER,$REDUCER \
  -mapper $MAPPER \
+ -combiner $COMBINER \
+ -reducer $REDUCER \
  -input $INPUTFILE \
  -output $OUTPUTFILE
 
-# -D mapred.text.key.partitioner.option=-k1,1 \
-#  -partitioner org.apache.hadoop.mapred.lib.KeyFieldBasedPartitioner \
-#  -reducer $REDUCER \
-#  -combiner $COMBINER \
 
 hadoop fs -getmerge $OUTPUTFILE result.txt
 # hadoop fs -rm -r $OUTPUTFILE
