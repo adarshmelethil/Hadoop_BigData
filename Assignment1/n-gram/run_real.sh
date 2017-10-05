@@ -8,7 +8,7 @@ MAPPER=mapper.py
 REDUCER=reducer.py
 COMBINER=reducer.py
 INPUTFILE=/user/dkrishna/wordcount/shakespeare.txt
-OUTPUTFILE=/user/adarsh.melethil/output
+OUTPUTFILE=/user/adarsh.melethil/Assignment1/n-gram/output
 
 while getopts "m:r:c:i:o" opt; do
 	case $opt in
@@ -34,4 +34,4 @@ hadoop jar $JARFILE \
  -output $OUTPUTFILE
 
 hadoop fs -getmerge $OUTPUTFILE result.txt
-hadoop fs -rm -r $OUTPUTFILE
+# hadoop fs -rm -r $OUTPUTFILE
