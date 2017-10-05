@@ -15,9 +15,9 @@ def main():
 		for word in words:
 			for c in string.punctuation:
 				word = word.replace(c,"")
-			value = word.lower()
-			key = value[0]
-		# 	key = 0 if value[0] < 'a' else value[0]
+			if len(word) == 0: continue
+			value = word
+			key = 0 if value[0] < 'a' else value[0]
 			print('{key}\t{value}'.format(key=key, value=value))
 	
 
