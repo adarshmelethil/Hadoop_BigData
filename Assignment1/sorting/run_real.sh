@@ -28,7 +28,7 @@ echo "Output file: $OUTPUTFILE"
 
 hadoop jar $JARFILE \
  -D mapred.reduce.tasks=0 \
- -files $MAPPER \
+ -files $MAPPER,$COMBINER,$REDUCER \
  -mapper $MAPPER \
  -input $INPUTFILE \
  -output $OUTPUTFILE
