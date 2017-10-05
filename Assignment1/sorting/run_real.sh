@@ -8,7 +8,7 @@ MAPPER=mapper.py
 REDUCER=reducer.py
 COMBINER=combiner.py
 INPUTFILE=/user/dkrishna/wordcount/shakespeare.txt
-OUTPUTFILE=/user/adarsh.melethil/output
+OUTPUTFILE=/user/adarsh.melethil/Assignment1/sorting/output
 
 while getopts "m:r:c:i:o" opt; do
 	case $opt in
