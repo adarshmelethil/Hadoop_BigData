@@ -28,7 +28,7 @@ echo "Output file: $OUTPUTFILE"
 
 hadoop jar $JARFILE \
  -D mapred.text.key.partitioner.option=-k1,1 \
- -D mapred.reduce.tasks=38 \
+ -D mapred.reduce.tasks=28 \
  -files $MAPPER,$REDUCER \
  -mapper $MAPPER \
  -reducer $REDUCER \
@@ -38,4 +38,4 @@ hadoop jar $JARFILE \
  -output $OUTPUTFILE
 
 hadoop fs -getmerge $OUTPUTFILE result.txt
-hadoop fs -rm -r $OUTPUTFILE
+# hadoop fs -rm -r $OUTPUTFILE
