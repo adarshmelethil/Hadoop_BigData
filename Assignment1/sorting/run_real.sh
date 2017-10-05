@@ -29,7 +29,7 @@ echo "Output file: $OUTPUTFILE"
 hadoop jar $JARFILE \
  -D mapred.text.key.partitioner.option=-k1,1 \
  -D mapred.reduce.tasks=28 \
- -files $MAPPER,$REDUCER \
+ -files $MAPPER,$REDUCER,$COMBINER \
  -mapper $MAPPER \
  -reducer $REDUCER \
  -partitioner org.apache.hadoop.mapred.lib.KeyFieldBasedPartitioner \
