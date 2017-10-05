@@ -7,7 +7,6 @@ import sys
 
 def main(_):
 	prev_key = None
-	tot_count = 0
 	for line in sys.stdin:
 		line = line.rstrip()
 		key, oldValue = line.split('\t')
@@ -24,7 +23,7 @@ def main(_):
 			value = ','.join(newValue)
 			print ('{key}\t{value}'.format(key=prev_key,value=value))
 			prev_key = key
-			tot_count = [oldValue]
+			newValue = oldValue.split(',')
 	value = ','.join(newValue)
 	print ('{key}\t{value}'.format(key=prev_key,value=value))
 
