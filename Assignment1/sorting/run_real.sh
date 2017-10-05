@@ -33,7 +33,6 @@ hadoop jar $JARFILE \
  -mapper $MAPPER \
  -reducer $REDUCER \
  -partitioner org.apache.hadoop.mapred.lib.KeyFieldBasedPartitioner \
- -combiner $COMBINER \
  -input $INPUTFILE \
  -output $OUTPUTFILE
 
