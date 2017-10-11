@@ -13,7 +13,7 @@ done
 
 echo "" > $FILE
 
-for (( num=0; num<28; num++ ))
+for (( num=0; num<27; num++ ))
 do
 	foo=$(printf "%05d" $num)
 	FIRST_ENTRY=$(hadoop fs -cat $OUTPUTFILE/part-$foo | head -n1)
