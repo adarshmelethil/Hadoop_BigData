@@ -1,20 +1,2 @@
 
-/user/adarsh.melethil/Assignment1/sorting/output/part-00000: abase	 - young	
-/user/adarsh.melethil/Assignment1/sorting/output/part-00001: 10	 - violentst	
-/user/adarsh.melethil/Assignment1/sorting/output/part-00002: aarons	 - youpray	
-/user/adarsh.melethil/Assignment1/sorting/output/part-00003: 101	 - zone	
-/user/adarsh.melethil/Assignment1/sorting/output/part-00004: abandoned	 - youwondrous	
-/user/adarsh.melethil/Assignment1/sorting/output/part-00005: 100	 - xanthippe	
-/user/adarsh.melethil/Assignment1/sorting/output/part-00006: abatements	 - youtli	
-/user/adarsh.melethil/Assignment1/sorting/output/part-00007: 127	 - zeals	
-/user/adarsh.melethil/Assignment1/sorting/output/part-00008: abbominable	 - yorks	
-/user/adarsh.melethil/Assignment1/sorting/output/part-00009: 119	 - xiv	
-/user/adarsh.melethil/Assignment1/sorting/output/part-00010: abbess	 - youth	
-/user/adarsh.melethil/Assignment1/sorting/output/part-00011: 118	 - zenith	
-/user/adarsh.melethil/Assignment1/sorting/output/part-00012: abatfowling	 - yoked	
-/user/adarsh.melethil/Assignment1/sorting/output/part-00013: 117	 - xv	
-/user/adarsh.melethil/Assignment1/sorting/output/part-00014: abandon	 - yoursnot	
-/user/adarsh.melethil/Assignment1/sorting/output/part-00015: 109	 - zodiacs	
-/user/adarsh.melethil/Assignment1/sorting/output/part-00016: abergavenny	 - youst	
-/user/adarsh.melethil/Assignment1/sorting/output/part-00017: 108	 - vocatur	
-/user/adarsh.melethil/Assignment1/sorting/output/part-00018: a	 - youwell	
+/user/adarsh.melethil/Assignment1/sorting/output/part-00000:  - 
