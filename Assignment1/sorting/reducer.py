@@ -10,7 +10,7 @@ def main(_):
 	for line in sys.stdin:
 		line = line.rstrip()
 		# print("-", line, "-")
-		key, value = line.split('\t')
+		key1, key2, value = line.split('.')
 
 		if prev_value == None:
 			prev_value = value
