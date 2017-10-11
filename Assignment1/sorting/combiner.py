@@ -21,11 +21,11 @@ def main(_):
 		if prev_key2 == key2:
 			continue
 		if prev_key2 != key2:
-			print('{key1}.{key2}.{value}'.format(key1=prev_key1, key2=prev_key2, value=prev_value))
+			print('{key1}.{key2}\t{value}'.format(key1=prev_key1, key2=prev_key2, value=prev_value))
 			prev_value = value
 			prev_key1 = key1
 			prev_key2 = key2
-	print ('{key1}.{key2}.{value}'.format(key1=prev_key1, key2=prev_key2, value=prev_value))
+	print ('{key1}.{key2}\t{value}'.format(key1=prev_key1, key2=prev_key2, value=prev_value))
 
 
 if __name__== '__main__':
