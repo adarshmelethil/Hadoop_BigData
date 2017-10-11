@@ -26,7 +26,7 @@ def main(_):
 			prev_value = value
 			prev_key1 = key1
 			prev_key2 = key2
-	print ('{key1},{key2}'.format(key1=prev_key1, key2=prev_key2, value=prev_value))
+	print ('{key1},{key2}\t{value}'.format(key1=prev_key1, key2=prev_key2, value=prev_value))
 
 
 if __name__== '__main__':
