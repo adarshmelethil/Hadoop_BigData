@@ -28,16 +28,10 @@ echo "Combiner: $COMBINER"
 echo "Input file: $INPUTFILE"
 echo "Output file: $OUTPUTFILE"
 
-hadoop jar $JARFILE  \
--D stream.num.map.output.key.fields=2 \
--D mapred.reduce.tasks=27 \
--D mapred.text.key.partitioner.option=-k1,1 \
--files $MAPPER,$REDUCER \
--mapper $MAPPER \
--reducer $REDUCER \
--input $INPUTFILE \
--output $OUTPUTFILE \
--partitioner org.apache.hadoop.mapred.lib.KeyFieldBasedPartitioner 
+# hadoop jar $JARFILE -D stream.num.map.output.key.fields=2 -D mapred.reduce.tasks=27 -D mapred.text.key.partitioner.option=-k1,1 -files $MAPPER,$REDUCER -mapper $MAPPER -reducer $REDUCER -input $INPUTFILE -output $OUTPUTFILE -partitioner org.apache.hadoop.mapred.lib.KeyFieldBasedPartitioner
+# hadoop jar /home/dkrishna/wordcount/hadoop-streaming-2.6.0.2.2.5.1-3.jar -D stream.num.map.output.key.fields=2 -D mapred.text.key.partitioner.options=-k1,1 -D mapred.reduce.tasks=27 -mapper mapper.py -reducer reducer.py -partitioner org.apache.hadoop.mapred.lib.KeyFieldBasedPartitioner -file ./mapper.py -file ./reducer.py  -input /user/dkrishna/wordcount/shakespeare.txt -output /user/dkrishna/output_test
+hadoop jar $JARFILE -D stream.num.map.output.key.fields=2 -D mapred.text.key.partitioner.options=-k1,1 -D mapred.reduce.tasks=27 -mapper mapper.py -reducer reducer.py -partitioner org.apache.hadoop.mapred.lib.KeyFieldBasedPartitioner -file ./mapper.py -file ./reducer.py  -input /user/dkrishna/wordcount/shakespeare.txt -output $OUTPUTFILE
+
 
 # -D stream.num.map.output.key.fields=2 \
 # -D stream.map.output.field.separator=. \
