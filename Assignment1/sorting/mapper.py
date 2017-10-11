@@ -19,7 +19,7 @@ def main():
 			
 			key1 = 0 if word[0] < 'a' else word[0]
 			key2 = word
-			value = value
+			value = word
 			print('{key1},{key2}\t{value}'.format(key1=key1, key2=key2, value=value))
 	
 
