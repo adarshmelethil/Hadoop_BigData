@@ -3,6 +3,7 @@ echo "Simulating map-reduce..."
 
 MAPPER=mapper.py
 REDUCER=reducer.py
+COMBINER=combiner.py
 INPUTFILE=in.txt
 
 while getopts "m:r:i" opt; do
@@ -17,7 +18,7 @@ echo "Maper: $MAPPER"
 echo "Rducer: $REDUCER"
 echo "Input file: $INPUTFILE"
 
-cat $INPUTFILE | python $MAPPER | sort -k1,1 | python $REDUCER 
+cat $INPUTFILE | python $MAPPER | sort -k1,1 | python $COMBINER | sort -k1,1 | python $REDUCER 
 
 
 
