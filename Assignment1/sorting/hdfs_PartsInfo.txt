@@ -1,2 +1,19 @@
 
-/user/adarsh.melethil/Assignment1/sorting/output/part-00000:  - 
+/user/adarsh.melethil/Assignment1/sorting/output/part-00000: 0.1609.1609	 - c.cassius.cassius	
+/user/adarsh.melethil/Assignment1/sorting/output/part-00001: b.bid.bid	 - m.most.most	
+/user/adarsh.melethil/Assignment1/sorting/output/part-00002:  - 
+/user/adarsh.melethil/Assignment1/sorting/output/part-00003:  - 
+/user/adarsh.melethil/Assignment1/sorting/output/part-00004:  - 
+/user/adarsh.melethil/Assignment1/sorting/output/part-00005:  - 
+/user/adarsh.melethil/Assignment1/sorting/output/part-00006:  - 
+/user/adarsh.melethil/Assignment1/sorting/output/part-00007:  - 
+/user/adarsh.melethil/Assignment1/sorting/output/part-00008:  - 
+/user/adarsh.melethil/Assignment1/sorting/output/part-00009:  - 
+/user/adarsh.melethil/Assignment1/sorting/output/part-00010:  - 
+/user/adarsh.melethil/Assignment1/sorting/output/part-00011:  - 
+/user/adarsh.melethil/Assignment1/sorting/output/part-00012:  - 
+/user/adarsh.melethil/Assignment1/sorting/output/part-00013:  - 
+/user/adarsh.melethil/Assignment1/sorting/output/part-00014:  - 
+/user/adarsh.melethil/Assignment1/sorting/output/part-00015:  - 
+/user/adarsh.melethil/Assignment1/sorting/output/part-00016:  - 
+/user/adarsh.melethil/Assignment1/sorting/output/part-00017:  - 
