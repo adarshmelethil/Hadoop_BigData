@@ -8,7 +8,7 @@ def main(_):
 	prev_value = None
 
 	for line in sys.stdin:
-		line = line.rstrip()
+		line = line.strip()
 		# print("-", line, "-")
 		key1, key2, value = line.split('.')
 

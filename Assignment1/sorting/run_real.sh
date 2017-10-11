@@ -34,7 +34,7 @@ hadoop jar $JARFILE \
  -D stream.num.map.output.key.fields=2 \
  -D mapred.reduce.tasks=27 \
  -D mapred.text.key.partitioner.option=-k1,1 \
- -files $MAPPER,$COMBINER,$REDUCER \
+ -files $MAPPER,$REDUCER \
  -mapper $MAPPER \
  -reducer $REDUCER \
  -input $INPUTFILE \
