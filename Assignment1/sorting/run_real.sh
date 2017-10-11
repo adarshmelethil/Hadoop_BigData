@@ -29,14 +29,11 @@ echo "Input file: $INPUTFILE"
 echo "Output file: $OUTPUTFILE"
 
 hadoop jar $JARFILE  \
--D stream.map.output.field.separator=\t \
--D map.output.key.field.separator=. \
 -D stream.num.map.output.key.fields=2 \
 -D mapred.reduce.tasks=27 \
 -D mapred.text.key.partitioner.option=-k1,1 \
--files $MAPPER,$COMBINER,$REDUCER \
+-files $MAPPER,$REDUCER \
 -mapper $MAPPER \
--combiner $COMBINER \
 -reducer $REDUCER \
 -input $INPUTFILE \
 -output $OUTPUTFILE \
@@ -44,7 +41,7 @@ hadoop jar $JARFILE  \
 
 # -D stream.num.map.output.key.fields=2 \
 # -D stream.map.output.field.separator=. \
-
+# 
 
 
 # hadoop fs -getmerge $OUTPUTFILE result.txt
