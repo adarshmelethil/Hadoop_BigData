@@ -36,12 +36,12 @@ hadoop jar $JARFILE \
  -D mapred.text.key.partitioner.option=-k1,1 \
  -files $MAPPER,$COMBINER,$REDUCER \
  -mapper $MAPPER \
- -combiner $COMBINER \
  -reducer $REDUCER \
  -input $INPUTFILE \
  -output $OUTPUTFILE \
  -partitioner org.apache.hadoop.mapred.lib.KeyFieldBasedPartitioner \
 
+#  -combiner $COMBINER \
 
 
 # hadoop fs -getmerge $OUTPUTFILE result.txt
