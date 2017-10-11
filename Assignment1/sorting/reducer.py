@@ -9,6 +9,7 @@ def main(_):
 
 	for line in sys.stdin:
 		line = line.rstrip()
+		print("-", line, "-")
 		key, value = line.split('\t')
 
 		if prev_value == None:
