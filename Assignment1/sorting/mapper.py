@@ -16,9 +16,10 @@ def main():
 			for c in string.punctuation:
 				word = word.replace(c,"")
 			if len(word) == 0: continue
-			value = word
-			key = 0 if value[0] < 'a' else value[0]
-			print('{key}\t{value}'.format(key=key, value=value))
+			
+			key1 = 0 if value[0] < 'a' else value[0]
+			key2 = value
+			print('{key1},{key2}'.format(key1=key1, key2=key2))
 	
 
 if __name__ == "__main__":
