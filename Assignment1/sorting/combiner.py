@@ -23,7 +23,6 @@ def main(_):
 			prev_key1 = key1
 			prev_key2 = key2
 	
-	print ('{key1},{key2}'.format(key1=key1, key2=key2))
 
 
 if __name__== '__main__':
