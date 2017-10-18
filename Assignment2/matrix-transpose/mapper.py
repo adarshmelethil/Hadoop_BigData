@@ -11,7 +11,7 @@ def main():
 		line = line.strip()
 		line = line.lower()
 		row, col, value = line.split(",")
-		key = "{row}\t{col}".format(row=row,col=col)
+		key = "{col}\t{row}".format(row=row,col=col)
 		print("{key}\t{value}".format(key=key, value=value))
 
 	
