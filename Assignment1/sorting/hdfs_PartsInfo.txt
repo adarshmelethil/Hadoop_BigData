@@ -1,2 +1,28 @@
 
-/user/adarsh.melethil/Assignment1/sorting/output/part-00000:  - 
+/user/adarsh.melethil/Assignment1/sorting/output/part-00000: l	 - lysanders	
+/user/adarsh.melethil/Assignment1/sorting/output/part-00001: m	 - mystry	
+/user/adarsh.melethil/Assignment1/sorting/output/part-00002: nag	 - nymphs	
+/user/adarsh.melethil/Assignment1/sorting/output/part-00003: o	 - oysterwench	
+/user/adarsh.melethil/Assignment1/sorting/output/part-00004: p	 - pythagoras	
+/user/adarsh.melethil/Assignment1/sorting/output/part-00005: quadrangle	 - quotidian	
+/user/adarsh.melethil/Assignment1/sorting/output/part-00006: r	 - ryestraw	
+/user/adarsh.melethil/Assignment1/sorting/output/part-00007: s	 - syrups	
+/user/adarsh.melethil/Assignment1/sorting/output/part-00008: t	 - tyrrel	
+/user/adarsh.melethil/Assignment1/sorting/output/part-00009: u	 - uttred	
+/user/adarsh.melethil/Assignment1/sorting/output/part-00010: v	 - vurther	
+/user/adarsh.melethil/Assignment1/sorting/output/part-00011: wad	 - wye	
+/user/adarsh.melethil/Assignment1/sorting/output/part-00012: x	 - xv	
+/user/adarsh.melethil/Assignment1/sorting/output/part-00013: y	 - youyou	
+/user/adarsh.melethil/Assignment1/sorting/output/part-00014: zanies	 - zwaggerd	
+/user/adarsh.melethil/Assignment1/sorting/output/part-00015:  - 
+/user/adarsh.melethil/Assignment1/sorting/output/part-00016: a	 - azure	
+/user/adarsh.melethil/Assignment1/sorting/output/part-00017: b	 - byzantium	
+/user/adarsh.melethil/Assignment1/sorting/output/part-00018: c	 - cytherea	
+/user/adarsh.melethil/Assignment1/sorting/output/part-00019: d	 - dying	
+/user/adarsh.melethil/Assignment1/sorting/output/part-00020: e	 - eyst	
+/user/adarsh.melethil/Assignment1/sorting/output/part-00021: 1	 - futurity	
+/user/adarsh.melethil/Assignment1/sorting/output/part-00022: g	 - gyves	
+/user/adarsh.melethil/Assignment1/sorting/output/part-00023: h	 - hysterica	
+/user/adarsh.melethil/Assignment1/sorting/output/part-00024: i	 - ix	
+/user/adarsh.melethil/Assignment1/sorting/output/part-00025: jacet	 - juvenal	
+/user/adarsh.melethil/Assignment1/sorting/output/part-00026: kam	 - knowt	
