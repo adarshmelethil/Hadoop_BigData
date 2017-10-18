@@ -8,7 +8,7 @@ MAPPER=mapper.py
 REDUCER=reducer.py
 COMBINER=combiner.py
 INPUTFILE=/user/instructor/matrix/matrix.txt
-OUTPUTFILE=/user/adarsh.melethil/Assignment2/matrix-transpose/output
+OUTPUTFILE=/user/adarsh.melethil/Assignment2/matrix-transpose/output_10
 
 while getopts "m:r:c:i:o:f" opt; do
 	case $opt in
