@@ -27,6 +27,6 @@ echo "Combiner: $COMBINER"
 echo "Input file: $INPUTFILE"
 echo "Output file: $OUTPUTFILE"
 
-hadoop jar $JARFILE -D stream.num.map.output.key.fields=2 -D mapred.reduce.tasks=10 -mapper $MAPPER -reducer $REDUCER -file ./$MAPPER -file ./$REDUCER  -input $INPUTFILE -output $OUTPUTFILE
+hadoop jar $JARFILE -D stream.num.map.output.key.fields=2 -D mapred.reduce.tasks=0 -mapper $MAPPER -file ./$MAPPER -input $INPUTFILE -output $OUTPUTFILE
 
 
