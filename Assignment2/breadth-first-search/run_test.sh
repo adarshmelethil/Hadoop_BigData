@@ -18,7 +18,7 @@ echo "Maper: $MAPPER"
 echo "Rducer: $REDUCER"
 echo "Input file: $INPUTFILE"
 
-cat $INPUTFILE | python $MAPPER | sort -k1,1 | python $COMBINER | sort -k1,1 | python $REDUCER 
+cat $INPUTFILE | python $MAPPER | sort -k1,1 python $REDUCER 
 
 
 
