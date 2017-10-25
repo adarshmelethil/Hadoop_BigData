@@ -8,7 +8,7 @@ MAPPER=mapper.py
 REDUCER=reducer.py
 COMBINER=combiner.py
 INPUTFILE=/user/dkrishna/wordcount/shakespeare.txt
-OUTPUTFILE=/user/adarsh.melethil/Assignment1/sorting/output
+OUTPUTFILE=/user/adarsh.melethil/Assignment2/breadth-first-search/output
 FILE=hdfs_PartsInfo.txt
 
 while getopts "m:r:c:i:o:f" opt; do
