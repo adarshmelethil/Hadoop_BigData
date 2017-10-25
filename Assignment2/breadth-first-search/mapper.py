@@ -25,7 +25,7 @@ def main():
 				print("{key}\t{value}".format(key=key, value=value))
 			key = node
 			value = "|".join([connections, distance, "black", source])
-			sys.stderr.write("reporter:counter:BreadthFirstSearch,black_count,1")
+			# sys.stderr.write("reporter:counter:BreadthFirstSearch,black_count,1")
 		else:
 			key = node
 			value = "|".join([connections, distance, is_visited, source])
