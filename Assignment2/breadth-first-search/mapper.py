@@ -35,9 +35,9 @@ def main():
 		# key = "{col}\t{row}".format(row=row,col=col)
 		# print("{key}\t{value}".format(key=key, value=value))
 
-	current_max_node = sys.stderr.read("reporter:status:")
-	if current_max_node == None or current_max_node < max_node:
-		sts.stderr.write("reporter:status:"+str(max_node))
+	# current_max_node = sys.stderr.read("reporter:status:")
+	# if current_max_node == None or current_max_node < max_node:
+	# 	sts.stderr.write("reporter:status:"+str(max_node))
 	
 
 if __name__ == "__main__":

@@ -28,20 +28,7 @@ echo "Combiner: $COMBINER"
 echo "Input file: $INPUTFILE"
 echo "Output file: $OUTPUTFILE"
 
-hadoop jar $JARFILE -D stream.num.map.output.key.fields=2 -D mapred.text.key.partitioner.options=-k1,1 -D mapred.reduce.tasks=27 -mapper mapper.py -reducer reducer.py -partitioner org.apache.hadoop.mapred.lib.KeyFieldBasedPartitioner -file ./mapper.py -file ./reducer.py  -input /user/dkrishna/wordcount/shakespeare.txt -output $OUTPUTFILE
+# hadoop jar $JARFILE -D stream.num.map.output.key.fields=2 -D mapred.text.key.partitioner.options=-k1,1 -D mapred.reduce.tasks=27 -mapper mapper.py -reducer reducer.py -partitioner org.apache.hadoop.mapred.lib.KeyFieldBasedPartitioner -file ./mapper.py -file ./reducer.py  -input /user/dkrishna/wordcount/shakespeare.txt -output $OUTPUTFILE
 
-
-
-echo "Checking head/tail of hadoop outputfile..."
-
-
-echo "" > $FILE
-
-for (( num=0; num<27; num++ ))
-do
-	foo=$(printf "%05d" $num)
-	FIRST_ENTRY=$(hadoop fs -cat $OUTPUTFILE/part-$foo | head -n1)
-	LAST_ENTRY=$(hadoop fs -cat $OUTPUTFILE/part-$foo | tail -n1)
-	echo "$OUTPUTFILE/part-$foo: $FIRST_ENTRY - $LAST_ENTRY" >> $FILE
-done
+hadoop jar $JARFILE -mapper $MAPPER -reducer $REDUCER -file ./$MAPPER -file ./$REDUCER  -input $INPUTFILE -output $OUTPUTFILE
 
