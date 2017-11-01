@@ -32,5 +32,6 @@ echo "Output file: $OUTPUTFILE"
 
 hadoop jar $JARFILE -mapper $MAPPER -reducer $REDUCER -file ./$MAPPER -file ./$REDUCER  -input $INPUTFILE -output $OUTPUTFILE &> mapreduce_output.txt
 
+cat $FILENAME | grep $COUNTNAME | cut -d '=' -f 2 
 
 
