@@ -12,4 +12,5 @@ while getopts "v:f" opt; do
 	esac
 done
 
-cat $FILENAME | grep $COUNTNAME | cut -d '=' -f 2 
+ANS=$(cat $FILENAME | grep $COUNTNAME | cut -d '=' -f 2) 
+echo "ANS=$ANS"
