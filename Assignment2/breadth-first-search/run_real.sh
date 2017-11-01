@@ -30,6 +30,8 @@ echo "Output file: $OUTPUTFILE"
 
 # hadoop jar $JARFILE -D stream.num.map.output.key.fields=2 -D mapred.text.key.partitioner.options=-k1,1 -D mapred.reduce.tasks=27 -mapper mapper.py -reducer reducer.py -partitioner org.apache.hadoop.mapred.lib.KeyFieldBasedPartitioner -file ./mapper.py -file ./reducer.py  -input /user/dkrishna/wordcount/shakespeare.txt -output $OUTPUTFILE
 
-hadoop jar $JARFILE -mapper $MAPPER -reducer $REDUCER -file ./$MAPPER -file ./$REDUCER  -input $INPUTFILE -output $OUTPUTFILE | cat > mapreduce_output.txt
+HADOOPOUTPUT=$(hadoop jar $JARFILE -mapper $MAPPER -reducer $REDUCER -file ./$MAPPER -file ./$REDUCER  -input $INPUTFILE -output $OUTPUTFILE)
+
+echo $HADOOPOUTPUT > mapreduce_output.txt
 
 
