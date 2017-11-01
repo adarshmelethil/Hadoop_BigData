@@ -30,8 +30,12 @@ echo "Output file: $OUTPUTFILE"
 
 # hadoop jar $JARFILE -D stream.num.map.output.key.fields=2 -D mapred.text.key.partitioner.options=-k1,1 -D mapred.reduce.tasks=27 -mapper mapper.py -reducer reducer.py -partitioner org.apache.hadoop.mapred.lib.KeyFieldBasedPartitioner -file ./mapper.py -file ./reducer.py  -input /user/dkrishna/wordcount/shakespeare.txt -output $OUTPUTFILE
 
-hadoop jar $JARFILE -mapper $MAPPER -reducer $REDUCER -file ./$MAPPER -file ./$REDUCER  -input $INPUTFILE -output $OUTPUTFILE &> mapreduce_output.txt
+NONBLACKCOUNT=1
+while [$NONBLACKCOUNT -g 0]
+do 
+	hadoop jar $JARFILE -mapper $MAPPER -reducer $REDUCER -file ./$MAPPER -file ./$REDUCER  -input $INPUTFILE -output $OUTPUTFILE &> mapreduce_output.txt
 
-cat $FILENAME | grep $COUNTNAME | cut -d '=' -f 2 
+	NONBLACKCOUNT=$(cat $FILENAME | grep $COUNTNAME | cut -d '=' -f 2) 
 
+done 
 
