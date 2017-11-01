@@ -2,7 +2,8 @@
 echo "Fetching count..."
 
 VARIABLENAME=countname
-FILENAME=in_shell.txt
+FILENAME=mapreduce_output.txt
+COUNTNAME=nonblack_count
 
 while getopts "v:f" opt; do
 	case $opt in
@@ -11,4 +12,4 @@ while getopts "v:f" opt; do
 	esac
 done
 
-cat $FILENAME | cut -d '=' -f 2 
+cat $FILENAME | grep $COUNTNAME | cut -d '=' -f 2 
