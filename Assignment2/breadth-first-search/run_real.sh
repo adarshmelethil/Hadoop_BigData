@@ -37,22 +37,22 @@ OUTPUTFILE1=/user/adarsh.melethil/Assignment2/breadth-first-search/output1
 ALTERNATE=0
 
 NONBLACKCOUNT=1
-echo "NONBLACKCOUNT: $NONBLACKCOUNT"
+
 while [ $NONBLACKCOUNT -gt 0 ];
 do 
 	if [ ALTERNATE -eq 0 ]
 	then
 		hadoop jar $JARFILE -mapper $MAPPER -reducer $REDUCER -file ./$MAPPER -file ./$REDUCER  -input $INPUTFILE -output $OUTPUTFILE0 &> mapreduce_output.txt
 		ALTERNATE=1
-		INPUTFILE=OUTPUTFILE0
+		INPUTFILE=$OUTPUTFILE0/part-00000
 		hadoop fs -rm -r $OUTPUTFILE1
 	else
 		hadoop jar $JARFILE -mapper $MAPPER -reducer $REDUCER -file ./$MAPPER -file ./$REDUCER  -input $INPUTFILE -output $OUTPUTFILE1 &> mapreduce_output.txt
 		ALTERNATE=0
-		INPUTFILE=OUTPUTFILE1
+		INPUTFILE=$OUTPUTFILE1/part-00000
 		hadoop fs -rm -r $OUTPUTFILE0
 	fi
 	NONBLACKCOUNT=$(cat $FILENAME | grep $COUNTNAME | cut -d '=' -f 2) 
-
+	echo "NONBLACKCOUNT: $NONBLACKCOUNT"
 done 
 
