@@ -10,6 +10,8 @@ COMBINER=combiner.py
 INPUTFILE=/user/adarsh.melethil/Assignment2/breadth-first-search/in.txt
 OUTPUTFILE=/user/adarsh.melethil/Assignment2/breadth-first-search/output
 FILE=hdfs_PartsInfo.txt
+
+HADOOPRESPONSE=mapreduce_output.txt
 COUNTNAME=nonblack_count
 
 while getopts "m:r:c:i:o:f" opt; do
@@ -43,19 +45,19 @@ do
 	if [ $ALTERNATE -eq 0 ]
 	then
 		echo "USING OUTPUT1"
-		hadoop jar $JARFILE -mapper $MAPPER -reducer $REDUCER -file ./$MAPPER -file ./$REDUCER  -input $INPUTFILE -output $OUTPUTFILE0 &> mapreduce_output.txt
+		hadoop jar $JARFILE -mapper $MAPPER -reducer $REDUCER -file ./$MAPPER -file ./$REDUCER  -input $INPUTFILE -output $OUTPUTFILE0 &> $HADOOPRESPONSE
 		ALTERNATE=1
 		INPUTFILE="$OUTPUTFILE0/part-00000"
 		hadoop fs -rm -r $OUTPUTFILE1
 	else
 		echo "USING OUTPUT1"
-		hadoop jar $JARFILE -mapper $MAPPER -reducer $REDUCER -file ./$MAPPER -file ./$REDUCER  -input $INPUTFILE -output $OUTPUTFILE1 &> mapreduce_output.txt
+		hadoop jar $JARFILE -mapper $MAPPER -reducer $REDUCER -file ./$MAPPER -file ./$REDUCER  -input $INPUTFILE -output $OUTPUTFILE1 &> $HADOOPRESPONSE
 		ALTERNATE=0
 		INPUTFILE="$OUTPUTFILE1/part-00000"
 		hadoop fs -rm -r $OUTPUTFILE0
 	fi
 	echo "GETING NONBLACKCOUNT"
-	NONBLACKCOUNT=$(cat $FILENAME | grep $COUNTNAME | cut -d '=' -f 2) 
+	NONBLACKCOUNT=$(cat $HADOOPRESPONSE | grep $COUNTNAME | cut -d '=' -f 2) 
 	echo "NONBLACKCOUNT: $NONBLACKCOUNT"
 done 
 
