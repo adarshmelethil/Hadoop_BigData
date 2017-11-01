@@ -2,7 +2,7 @@
 echo "Fetching count..."
 
 VARIABLENAME=countname
-FILENAME=in_shell.txt
+FILENAME=mapreduce_output.txt
 
 while getopts "v:f" opt; do
 	case $opt in
