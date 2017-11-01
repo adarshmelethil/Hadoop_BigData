@@ -22,6 +22,8 @@ def main():
 				key = str(connection)
 				value = "|".join(["null", str(int(distance)+1), "gray", node])
 				print("{key}\t{value}".format(key=key, value=value))
+				sys.stderr.write("reporter:counter:BreadthFirstSearch,mapper_test,1")
+		
 			key = node
 			value = "|".join([connections, distance, "black", source])
 		else:

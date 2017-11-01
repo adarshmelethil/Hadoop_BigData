@@ -37,8 +37,8 @@ def main():
 			key = cur_node
 			value = "|".join([cur_connections, cur_distance, cur_is_visted, cur_source])
 			# print("{key}\t{value}".format(key=key, value=value))
-			sys.stderr.write("reporter:counter:BreadthFirstSearch,total_count,1")
-			if(cur_is_visted != "black"):
+			# sys.stderr.write("reporter:counter:BreadthFirstSearch,total_count,1")
+			# if(cur_is_visted != "black"):
 				sys.stderr.write("reporter:counter:BreadthFirstSearch,nonblack_count,1")
 			
 			cur_node = node
@@ -52,8 +52,8 @@ def main():
 	value = "|".join([cur_connections, cur_distance, cur_is_visted, cur_source])
 	print("{key}\t{value}".format(key=key, value=value))
 	# sys.stderr.write("reporter:counter:BreadthFirstSearch,total_count,1")
-	if(cur_is_visted != "black"):
-		sys.stderr.write("reporter:counter:BreadthFirstSearch,nonblack_count,1")
+	# if(cur_is_visted != "black"):
+	# 	sys.stderr.write("reporter:counter:BreadthFirstSearch,nonblack_count,1")
 	
 
 if __name__ == "__main__":
