@@ -37,6 +37,7 @@ OUTPUTFILE1=/user/adarsh.melethil/Assignment2/breadth-first-search/output1
 ALTERNATE=0
 
 NONBLACKCOUNT=1
+echo "NONBLACKCOUNT: $NONBLACKCOUNT"
 while [$NONBLACKCOUNT -gt 0];
 do 
 	if [ALTERNATE -eq 0];  then
