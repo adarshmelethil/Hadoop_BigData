@@ -28,6 +28,7 @@ def main():
 			key = node
 			value = "|".join([connections, distance, is_visited, source])
 		print("{key}\t{value}".format(key=key, value=value))
+		sys.stderr.write("reporter:counter:BreadthFirstSearch,mapper_test,1")
 		
 	
 
