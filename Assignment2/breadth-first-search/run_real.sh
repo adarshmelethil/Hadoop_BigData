@@ -44,7 +44,7 @@ while [ $NONBLACKCOUNT -gt 0 ];
 do 
 	if [ $ALTERNATE -eq 0 ]
 	then
-		echo "USING OUTPUT1"
+		echo "USING OUTPUT0"
 		hadoop jar $JARFILE -mapper $MAPPER -reducer $REDUCER -file ./$MAPPER -file ./$REDUCER  -input $INPUTFILE -output $OUTPUTFILE0 &> $HADOOPRESPONSE
 		ALTERNATE=1
 		INPUTFILE="$OUTPUTFILE0/part-00000"
