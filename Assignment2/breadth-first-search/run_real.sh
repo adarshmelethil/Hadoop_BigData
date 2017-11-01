@@ -38,7 +38,7 @@ ALTERNATE=0
 
 NONBLACKCOUNT=1
 echo "NONBLACKCOUNT: $NONBLACKCOUNT"
-while [$NONBLACKCOUNT -gt 0];
+while [ $NONBLACKCOUNT -gt 0 ];
 do 
 	if [ALTERNATE -eq 0];  then
 		hadoop jar $JARFILE -mapper $MAPPER -reducer $REDUCER -file ./$MAPPER -file ./$REDUCER  -input $INPUTFILE -output $OUTPUTFILE0 &> mapreduce_output.txt
