@@ -32,10 +32,5 @@ echo "Output file: $OUTPUTFILE"
 
 hadoop jar $JARFILE -mapper $MAPPER -reducer $REDUCER -file ./$MAPPER -file ./$REDUCER  -input $INPUTFILE -output $OUTPUTFILE &> mapreduce_output.txt
 
-<<<<<<< HEAD
-echo $HADOOPOUTPUT
-echo $HADOOPOUTPUT > mapreduce_output.txt
-=======
->>>>>>> 707af8be38a02d4ae8af687408e5679568b2a5e3
 
 
