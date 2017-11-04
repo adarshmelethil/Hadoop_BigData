@@ -76,3 +76,5 @@ do
 	echo "NONBLACKCOUNT: $NONBLACKCOUNT"
 done 
 
+echo "FINISHED, final output is in:"
+echo "$OUTPUTFILE"
