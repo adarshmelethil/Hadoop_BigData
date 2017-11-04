@@ -1,122 +1,76 @@
-17/11/01 17:15:07 WARN streaming.StreamJob: -file option is deprecated, please use generic option -files instead.
-packageJobJar: [./mapper.py, ./reducer.py] [/usr/hdp/2.5.0.0-1245/hadoop-mapreduce/hadoop-streaming-2.7.3.2.5.0.0-1245.jar] /tmp/streamjob351536936299611415.jar tmpDir=null
-17/11/01 17:15:11 INFO impl.TimelineClientImpl: Timeline service address: http://w11.woozle.ucalgary.ca:8188/ws/v1/timeline/
-17/11/01 17:15:11 INFO client.RMProxy: Connecting to ResourceManager at w30.woozle.ucalgary.ca/192.168.1.30:8050
-17/11/01 17:15:11 INFO client.AHSProxy: Connecting to Application History server at w11.woozle.ucalgary.ca/192.168.1.11:10200
-17/11/01 17:15:12 INFO impl.TimelineClientImpl: Timeline service address: http://w11.woozle.ucalgary.ca:8188/ws/v1/timeline/
-17/11/01 17:15:12 INFO client.RMProxy: Connecting to ResourceManager at w30.woozle.ucalgary.ca/192.168.1.30:8050
-17/11/01 17:15:12 INFO client.AHSProxy: Connecting to Application History server at w11.woozle.ucalgary.ca/192.168.1.11:10200
-17/11/01 17:15:13 INFO mapred.FileInputFormat: Total input paths to process : 1
-17/11/01 17:15:13 INFO mapreduce.JobSubmitter: number of splits:2
-17/11/01 17:15:13 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1506442146234_2213
-17/11/01 17:15:13 INFO impl.YarnClientImpl: Submitted application application_1506442146234_2213
-17/11/01 17:15:14 INFO mapreduce.Job: The url to track the job: http://w30.woozle.ucalgary.ca:8088/proxy/application_1506442146234_2213/
-17/11/01 17:15:14 INFO mapreduce.Job: Running job: job_1506442146234_2213
-17/11/01 17:15:24 INFO mapreduce.Job: Job job_1506442146234_2213 running in uber mode : false
-17/11/01 17:15:24 INFO mapreduce.Job:  map 0% reduce 0%
-17/11/01 17:15:33 INFO mapreduce.Job: Task Id : attempt_1506442146234_2213_m_000001_0, Status : FAILED
-Error: java.lang.RuntimeException: PipeMapRed.waitOutputThreads(): subprocess failed with code 1
-	at org.apache.hadoop.streaming.PipeMapRed.waitOutputThreads(PipeMapRed.java:322)
-	at org.apache.hadoop.streaming.PipeMapRed.mapRedFinished(PipeMapRed.java:535)
-	at org.apache.hadoop.streaming.PipeMapper.close(PipeMapper.java:130)
-	at org.apache.hadoop.mapred.MapRunner.run(MapRunner.java:61)
-	at org.apache.hadoop.streaming.PipeMapRunner.run(PipeMapRunner.java:34)
-	at org.apache.hadoop.mapred.MapTask.runOldMapper(MapTask.java:453)
-	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:343)
-	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:168)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at javax.security.auth.Subject.doAs(Subject.java:422)
-	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1724)
-	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:162)
-
-Container killed by the ApplicationMaster.
-Container killed on request. Exit code is 143
-Container exited with a non-zero exit code 143
-
-17/11/01 17:15:34 INFO mapreduce.Job:  map 50% reduce 0%
-17/11/01 17:15:42 INFO mapreduce.Job: Task Id : attempt_1506442146234_2213_m_000001_1, Status : FAILED
-Error: java.lang.RuntimeException: PipeMapRed.waitOutputThreads(): subprocess failed with code 1
-	at org.apache.hadoop.streaming.PipeMapRed.waitOutputThreads(PipeMapRed.java:322)
-	at org.apache.hadoop.streaming.PipeMapRed.mapRedFinished(PipeMapRed.java:535)
-	at org.apache.hadoop.streaming.PipeMapper.close(PipeMapper.java:130)
-	at org.apache.hadoop.mapred.MapRunner.run(MapRunner.java:61)
-	at org.apache.hadoop.streaming.PipeMapRunner.run(PipeMapRunner.java:34)
-	at org.apache.hadoop.mapred.MapTask.runOldMapper(MapTask.java:453)
-	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:343)
-	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:168)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at javax.security.auth.Subject.doAs(Subject.java:422)
-	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1724)
-	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:162)
-
-17/11/01 17:15:48 INFO mapreduce.Job:  map 50% reduce 17%
-17/11/01 17:15:52 INFO mapreduce.Job: Task Id : attempt_1506442146234_2213_m_000001_2, Status : FAILED
-Error: java.lang.RuntimeException: PipeMapRed.waitOutputThreads(): subprocess failed with code 1
-	at org.apache.hadoop.streaming.PipeMapRed.waitOutputThreads(PipeMapRed.java:322)
-	at org.apache.hadoop.streaming.PipeMapRed.mapRedFinished(PipeMapRed.java:535)
-	at org.apache.hadoop.streaming.PipeMapper.close(PipeMapper.java:130)
-	at org.apache.hadoop.mapred.MapRunner.run(MapRunner.java:61)
-	at org.apache.hadoop.streaming.PipeMapRunner.run(PipeMapRunner.java:34)
-	at org.apache.hadoop.mapred.MapTask.runOldMapper(MapTask.java:453)
-	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:343)
-	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:168)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at javax.security.auth.Subject.doAs(Subject.java:422)
-	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1724)
-	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:162)
-
-Container killed by the ApplicationMaster.
-Container killed on request. Exit code is 143
-Container exited with a non-zero exit code 143
-
-17/11/01 17:16:00 INFO mapreduce.Job:  map 100% reduce 17%
-17/11/01 17:16:01 INFO mapreduce.Job:  map 100% reduce 100%
-17/11/01 17:16:01 INFO mapreduce.Job: Job job_1506442146234_2213 failed with state FAILED due to: Task failed task_1506442146234_2213_m_000001
-Job failed as tasks failed. failedMaps:1 failedReduces:0
-
-17/11/01 17:16:01 INFO mapreduce.Job: Counters: 39
+17/11/04 11:22:42 WARN streaming.StreamJob: -file option is deprecated, please use generic option -files instead.
+packageJobJar: [./mapper.py, ./reducer.py] [/usr/hdp/2.5.0.0-1245/hadoop-mapreduce/hadoop-streaming-2.7.3.2.5.0.0-1245.jar] /tmp/streamjob8248816540080871830.jar tmpDir=null
+17/11/04 11:22:45 INFO impl.TimelineClientImpl: Timeline service address: http://w11.woozle.ucalgary.ca:8188/ws/v1/timeline/
+17/11/04 11:22:45 INFO client.RMProxy: Connecting to ResourceManager at w30.woozle.ucalgary.ca/192.168.1.30:8050
+17/11/04 11:22:45 INFO client.AHSProxy: Connecting to Application History server at w11.woozle.ucalgary.ca/192.168.1.11:10200
+17/11/04 11:22:46 INFO impl.TimelineClientImpl: Timeline service address: http://w11.woozle.ucalgary.ca:8188/ws/v1/timeline/
+17/11/04 11:22:46 INFO client.RMProxy: Connecting to ResourceManager at w30.woozle.ucalgary.ca/192.168.1.30:8050
+17/11/04 11:22:46 INFO client.AHSProxy: Connecting to Application History server at w11.woozle.ucalgary.ca/192.168.1.11:10200
+17/11/04 11:22:47 INFO mapred.FileInputFormat: Total input paths to process : 1
+17/11/04 11:22:47 INFO mapreduce.JobSubmitter: number of splits:2
+17/11/04 11:22:47 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1506442146234_2413
+17/11/04 11:22:48 INFO impl.YarnClientImpl: Submitted application application_1506442146234_2413
+17/11/04 11:22:48 INFO mapreduce.Job: The url to track the job: http://w30.woozle.ucalgary.ca:8088/proxy/application_1506442146234_2413/
+17/11/04 11:22:48 INFO mapreduce.Job: Running job: job_1506442146234_2413
+17/11/04 11:22:58 INFO mapreduce.Job: Job job_1506442146234_2413 running in uber mode : false
+17/11/04 11:22:58 INFO mapreduce.Job:  map 0% reduce 0%
+17/11/04 11:23:07 INFO mapreduce.Job:  map 100% reduce 0%
+17/11/04 11:23:16 INFO mapreduce.Job:  map 100% reduce 100%
+17/11/04 11:23:16 INFO mapreduce.Job: Job job_1506442146234_2413 completed successfully
+17/11/04 11:23:17 INFO mapreduce.Job: Counters: 49
 	File System Counters
-		FILE: Number of bytes read=0
-		FILE: Number of bytes written=145571
+		FILE: Number of bytes read=159
+		FILE: Number of bytes written=436760
 		FILE: Number of read operations=0
 		FILE: Number of large read operations=0
 		FILE: Number of write operations=0
-		HDFS: Number of bytes read=247
-		HDFS: Number of bytes written=0
-		HDFS: Number of read operations=3
+		HDFS: Number of bytes read=449
+		HDFS: Number of bytes written=89
+		HDFS: Number of read operations=9
 		HDFS: Number of large read operations=0
-		HDFS: Number of write operations=0
+		HDFS: Number of write operations=2
 	Job Counters 
-		Failed map tasks=4
-		Killed reduce tasks=1
-		Launched map tasks=5
+		Launched map tasks=2
 		Launched reduce tasks=1
-		Other local map tasks=3
 		Rack-local map tasks=2
-		Total time spent by all maps in occupied slots (ms)=107058
-		Total time spent by all reduces in occupied slots (ms)=70941
-		Total time spent by all map tasks (ms)=35686
-		Total time spent by all reduce tasks (ms)=23647
-		Total vcore-milliseconds taken by all map tasks=35686
-		Total vcore-milliseconds taken by all reduce tasks=23647
-		Total megabyte-milliseconds taken by all map tasks=54813696
-		Total megabyte-milliseconds taken by all reduce tasks=36321792
+		Total time spent by all maps in occupied slots (ms)=38820
+		Total time spent by all reduces in occupied slots (ms)=19740
+		Total time spent by all map tasks (ms)=12940
+		Total time spent by all reduce tasks (ms)=6580
+		Total vcore-milliseconds taken by all map tasks=12940
+		Total vcore-milliseconds taken by all reduce tasks=6580
+		Total megabyte-milliseconds taken by all map tasks=19875840
+		Total megabyte-milliseconds taken by all reduce tasks=10106880
 	Map-Reduce Framework
-		Map input records=3
-		Map output records=3
-		Map output bytes=57
-		Map output materialized bytes=69
-		Input split bytes=159
+		Map input records=5
+		Map output records=8
+		Map output bytes=137
+		Map output materialized bytes=165
+		Input split bytes=318
 		Combine input records=0
-		Spilled Records=3
+		Combine output records=0
+		Reduce input groups=5
+		Reduce shuffle bytes=165
+		Reduce input records=8
+		Reduce output records=5
+		Spilled Records=16
+		Shuffled Maps =2
 		Failed Shuffles=0
-		Merged Map outputs=0
-		GC time elapsed (ms)=124
-		CPU time spent (ms)=2030
-		Physical memory (bytes) snapshot=1122717696
-		Virtual memory (bytes) snapshot=3218239488
-		Total committed heap usage (bytes)=1068498944
+		Merged Map outputs=2
+		GC time elapsed (ms)=336
+		CPU time spent (ms)=6770
+		Physical memory (bytes) snapshot=2447536128
+		Virtual memory (bytes) snapshot=9686155264
+		Total committed heap usage (bytes)=2300051456
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
 	File Input Format Counters 
-		Bytes Read=88
-17/11/01 17:16:01 ERROR streaming.StreamJob: Job not successful!
-Streaming Command Failed!
+		Bytes Read=131
+	File Output Format Counters 
+		Bytes Written=89
+17/11/04 11:23:17 INFO streaming.StreamJob: Output directory: /user/adarsh.melethil/Assignment2/breadth-first-search/output0
