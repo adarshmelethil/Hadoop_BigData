@@ -42,7 +42,9 @@ ALTERNATE=0
 
 NONBLACKCOUNT=1
 
-hadoop jar $JARFILE -mapper $MAPPER -reducer $REDUCER -file ./$MAPPER -file ./$REDUCER  -input $INPUTFILE -output $OUTPUTFILE0
+INPUTFILE=$OUTPUTFILE0/part-00000
+OUTPUTFILE=$OUTPUTFILE1
+hadoop jar $JARFILE -mapper $MAPPER -reducer $REDUCER -file ./$MAPPER -file ./$REDUCER  -input $INPUTFILE -output $OUTPUTFILE
 # hadoop jar $JARFILE -mapper $MAPPER -reducer $REDUCER -file ./$MAPPER -file ./$REDUCER  -input $OUTPUTFILE0/part-00000 -output $OUTPUTFILE1
 # hadoop jar $JARFILE -mapper $MAPPER -reducer $REDUCER -file ./$MAPPER -file ./$REDUCER  -input $OUTPUTFILE1/part-00000 -output $OUTPUTFILE2
 
