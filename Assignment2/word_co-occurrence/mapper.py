@@ -14,8 +14,8 @@ def main():
 		items_list = line.split(" ")
 		for i in range(len(items_list)-1):
 			for j in range(i+1,len(items_list)):
-				print("{}\t{}".format(items_list[i], items_list[j]))
-				print("{}\t{}".format(items_list[j], items_list[i]))
+				print("{item1}\t{item2}".format(item1=items_list[i], item2=items_list[j]))
+				print("{item2}\t{item1}".format(item1=items_list[i], item2=items_list[j]))
 
 	
 
