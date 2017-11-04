@@ -53,7 +53,7 @@ do
 	if [ $ALTERNATE -eq 0 ]
 	then
 		# echo "USING OUTPUT0"
-		OUTPUTFILE=OUTPUTFILE0
+		OUTPUTFILE=$OUTPUTFILE0
 		echo "Input file: $INPUTFILE"
 		echo "Output file: $OUTPUTFILE"
 		hadoop jar $JARFILE -mapper $MAPPER -reducer $REDUCER -file ./$MAPPER -file ./$REDUCER  -input $INPUTFILE -output $OUTPUTFILE &> $HADOOPRESPONSE
@@ -62,7 +62,7 @@ do
 		hadoop fs -rm -r $OUTPUTFILE1
 	else
 		# echo "USING OUTPUT1"
-		OUTPUTFILE=OUTPUTFILE1
+		OUTPUTFILE=$OUTPUTFILE1
 		echo "Input file: $INPUTFILE"
 		echo "Output file: $OUTPUTFILE"
 		hadoop jar $JARFILE -mapper $MAPPER -reducer $REDUCER -file ./$MAPPER -file ./$REDUCER  -input $INPUTFILE -output $OUTPUTFILE &> $HADOOPRESPONSE
