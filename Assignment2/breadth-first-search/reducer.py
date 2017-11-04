@@ -21,7 +21,7 @@ def main():
 			cur_source = source
 			continue
 		if cur_node == node:
-			if cur_connections == None:
+			if cur_connections == None or cur_connections == 'null':
 				cur_connections = connections
 			if cur_distance > distance:
 				cur_distance = distance
