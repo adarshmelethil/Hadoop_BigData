@@ -10,7 +10,7 @@ COMBINER=combiner.py
 INPUTFILE=/user/dkrishna/retail/retail.dat
 OUTPUTFILE=/user/adarsh.melethil/Assignment2/word_co-occurrence/output
 
-while getopts "m:r:c:i:o:f" opt; do
+while getopts ":m:r:c:i:o:f:" opt; do
 	case $opt in
 		m) MAPPER=$OPTARG;;
 		r) REDUCER=$OPTARG;;
