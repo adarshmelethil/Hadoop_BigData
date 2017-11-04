@@ -12,6 +12,7 @@ def main():
 	for line in sys.stdin:
 		line = line.strip()
 		line = line.lower()
+		# print("**",line)
 		node, info = line.split("\t")
 		connections, distance, is_visited, source = info.split("|")
 		if max_node == -1 or max_node < node:
