@@ -48,7 +48,7 @@ OUTPUTFILE2=/user/adarsh.melethil/Assignment2/breadth-first-search/output2
 
 ALTERNATE=0
 NONBLACKCOUNT=1
-while [ $NONBLACKCOUNT -gt 0 ];
+while [[ ! -z "$NONBLACKCOUNT" ]];
 do 
 	if [ $ALTERNATE -eq 0 ]
 	then
