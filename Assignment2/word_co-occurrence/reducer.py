@@ -32,9 +32,10 @@ def main():
 			item_N += 1
 		elif cur_item_1 != item_1:
 			print( "{item1}\t{item2}\t{value:f}".format(item1=cur_item_1, item2=cur_item_2, value=(pair_counter/item_N)) )
-
+			print("{counter}/{N}".format(counter=pair_counter, N=item_N))
 			for pair in item_pair_list:
 				print( "{items}\t{value:f}".format(items=pair["key"], value=(pair["value"]/item_N)) )
+				print("{counter}/{N}".format(counter=pair["value"], N=item_N))
 			cur_item_1 = item_1
 			cur_item_2 = item_2
 			pair_counter = 1
@@ -44,8 +45,10 @@ def main():
 	# print("{}\t{}\t{}".format(cur_item_1, cur_item_2, pair_counter))
 	# print("{}\t{}\t{}".format(cur_item_1, 0, item_N))
 	print( "{item1}\t{item2}\t{value:f}".format(item1=cur_item_1, item2=cur_item_2, value=(pair_counter/item_N)) )
+	print("{counter}/{N}".format(counter=pair_counter, N=item_N))
 	for pair in item_pair_list:
 		print("{items}\t{value:f}".format(items=pair["key"], value=(pair["value"]/item_N)))
+		print("{counter}/{N}".format(counter=pair["value"], N=item_N))
 
 	
 
