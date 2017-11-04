@@ -21,4 +21,4 @@ echo "Rducer: $REDUCER"
 echo "Input file: $INPUTFILE"
 
 # cat $INPUTFILE | python $MAPPER | sort -k1,1 | python $REDUCER1 | sort -k1,1 | python $REDUCER2
-cat $INPUTFILE | python $MAPPER | sort -k1,1 | python $REDUCER | sort -k1,1
+cat $INPUTFILE | python $MAPPER | sort -k1,1 | python $REDUCER 
